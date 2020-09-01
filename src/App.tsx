@@ -1,8 +1,13 @@
 import React from "react";
-import Counter from "./counter";
+import ReducerSample from "./ReducerSample";
+import { SampleProvider } from "./SampleContext";
 
 const App: React.FC = () => {
-  return <Counter />;
+  return (
+    <SampleProvider>
+      <ReducerSample />
+    </SampleProvider>
+  );
 };
 
 export default App;
